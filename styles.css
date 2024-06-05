@@ -10,18 +10,20 @@ body {
 
 .container {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 600px;
+    max-width: 100%;
     width: 100%;
+    box-sizing: border-box;
+    margin: 10px;
 }
 
 h1 {
     color: #fbb034;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     position: relative;
     padding-bottom: 10px;
@@ -46,15 +48,15 @@ table {
 
 th, td {
     border: 1px solid #ccc;
-    padding: 12px;
+    padding: 8px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 th {
     background-color: #4caf50;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 td input {
@@ -63,16 +65,16 @@ td input {
     box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 button {
     background-color: #28a745;
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
@@ -82,7 +84,7 @@ button:hover {
 }
 
 #result {
-    font-size: 20px;
+    font-size: 18px;
     color: #ff4c4c;
     font-weight: bold;
 }
@@ -90,6 +92,7 @@ button:hover {
 /* Thêm yếu tố trang trí */
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -98,11 +101,30 @@ button:hover {
 .logo {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .tagline {
-    font-size: 20px;
+    font-size: 18px;
     color: #333;
     font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+    th, td {
+        padding: 12px;
+        font-size: 16px;
+    }
+    td input {
+        font-size: 16px;
+    }
+    button {
+        font-size: 18px;
+    }
+    #result {
+        font-size: 20px;
+    }
 }
