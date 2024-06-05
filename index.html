@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Tính Số Túi Nha Đam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bảng Tính Số Túi Nha Đam</h1>
+        <table>
+            <tr>
+                <th>Doanh Thu Tổng</th>
+                <th>Khoản Chi</th>
+                <th>Số Túi</th>
+                <th>Số Túi Nha Đam</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="doanhThu" placeholder="Nhập Doanh Thu"></td>
+                <td><input type="number" id="khoanChi" placeholder="Nhập Khoản Chi"></td>
+                <td><input type="number" id="soTui" placeholder="Nhập Số Túi"></td>
+                <td id="result">0</td>
+            </tr>
+        </table>
+        <button onclick="calculate()">Tính toán</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
