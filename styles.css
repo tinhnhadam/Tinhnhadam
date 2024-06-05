@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffdd00, #fbb034);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,15 +10,32 @@ body {
 
 .container {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    max-width: 600px;
+    width: 100%;
 }
 
 h1 {
-    color: red;
+    color: #fbb034;
     margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: 'Anh Bán Trà';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
 }
 
 table {
@@ -29,35 +46,63 @@ table {
 
 th, td {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
+    font-size: 16px;
 }
 
 th {
-    background-color: #87CEEB;
+    background-color: #4caf50;
     color: white;
+    font-size: 18px;
 }
 
 td input {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     box-sizing: border-box;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     font-size: 16px;
 }
 
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
 button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 #result {
-    font-size: 18px;
-    color: red;
+    font-size: 20px;
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+/* Thêm yếu tố trang trí */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.tagline {
+    font-size: 20px;
+    color: #333;
+    font-style: italic;
 }
