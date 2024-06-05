@@ -89,7 +89,6 @@ button:hover {
     font-weight: bold;
 }
 
-/* Thêm yếu tố trang trí */
 .header {
     display: flex;
     flex-direction: column;
